@@ -88,11 +88,11 @@ namespace PaperRockScissor
                     }
                 if (scorePlayer == 5)
                 {
-                    Console.WriteLine("YOU WIN!!!");
+                    Console.WriteLine("\n\n                     YOU WIN!!!");
                 }
                 else if (scoreC == 5)
                 {
-                    Console.WriteLine("YOU LOSE!!!");
+                    Console.WriteLine("\n\n                     YOU LOSE!!!");
                 }
                 Console.WriteLine("Play Again??? y/n");
                 string loop = Console.ReadLine().ToLower();

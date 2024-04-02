@@ -1,18 +1,15 @@
 ﻿using Class._02.Exercise01.Domain.Interface;
 using Class._02.Exercise01.Domain.Models;
 
-Student student = new Student
-    ("Jonas", "Nielsen", "a", "Test", new List<int> { 5, 5, 5 });
+Student student = new Student("Ana", "Petrovska", "aPetrovska", "test123", new List<int> { 5, 5, 4 });
 student.PrintUser();
 
-Teacher teacher = new Teacher("Math", "Jonas", "NIelsen", "test", "Test2");
+Console.WriteLine(student.GetAverageGrade());
+
+Teacher teacher = new Teacher("Tanja", "Panchevska", "tPanchevska", "test111", "Advanced C#");
+
+teacher.PrintUser();
 teacher.PrintSubject();
-
-
-
-
-
-
 
 
 

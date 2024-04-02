@@ -10,21 +10,27 @@ namespace Class._02.Exercise01.Domain.Models
 {
     public class Teacher : User, ITeacher
     {
-        public string Subject { get; set; }
-        public Teacher(string subject,string firstname, string lastname, string username, string password)
-            : base(firstname, lastname, username, password)
+        public Teacher(string firstName, string lastName, string userName, string password, string subject)
+            : base(firstName, lastName, userName, password)
         {
             Subject = subject;
         }
 
-        public override void PrintUser()
-        {
-            Console.WriteLine($"Teacher {Firstname} {Lastname} \nTeaches: {Subject}");
-            
-        }
+        public string Subject { get; set; }
+
         public void PrintSubject()
         {
-            Console.WriteLine($"Subject is: {Subject}");
+            Console.WriteLine($"The current subject is {Subject}.");
+        }
+
+        public void PrintSubjects()
+        {
+            Console.WriteLine($"The current subject is {Subject}.");
+        }
+
+        public override void PrintUser()
+        {
+            Console.WriteLine($"Teacher {FirstName} {LastName} teaches {Subject}");
         }
     }
 }
